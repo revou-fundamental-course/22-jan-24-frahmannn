@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>E-Groceries</title>
+</head>
+
+<body>
+    <section id="banner" class="banner">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#our-package">Our Package</a></li>
+                    <li><a href="#call-action">Call Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ... (navbar code) -->
+
+        <div class="slogan">
+            <h2>top rated e-groceries shop in<br>indonesian</h2>
+            <p>Every day with the best ingredients</p>
+        </div>
+
+        <div class="content-container">
+                <div class="image-slider-container">
+                    <div class="image-slider">
+                        <img src="buah dan sayur.png" alt="buah dan sayur">
+                        <img src="Organic-Fruits-And-Vegetables-PNG-Picture.png" alt="">
+                        <img src="Organic-Fruits-And-Vegetables-PNG-Transparent-Image.png" alt="">
+                        <img src="Organic-Fruits-And-Vegetables-Transparent-Background.png" alt="">
+                        <img src="Fresh-Fruits-And-Vegetables-PNG-Free-Download.png" alt="">
+                    </div>
+                <p class="image-caption">setiap hari beli sayur buah yang fresh disini</p>
+                <br>
+                <div class="profile-info">
+                    <img src="foto-profil.png" alt="Foto Profil">
+                    <div class="profile-text">
+                        <p>Florence Hughes <br>Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="feature">
+                    <h4>mengapa harus menggunakan layanan kami?</h4>
+                    <div class="feature-item">
+                        <img src="1.png" alt="Fitur 1">
+                        <div>
+                            <h3>Time-Saving Efficiency:</h3>
+                            <p>Alat manajemen waktu canggih kami mengotomatisasi tugas-tugas yang berulang, memungkinkan Anda fokus pada
+                                hal yang benar-benar penting. Selamat tinggal pada proses yang memakan waktu dan rasakan peningkatan
+                                produktivitas yang signifikan.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <img src="2.png" alt="Fitur 2">
+                        <div>
+                            <h3>Seamless Collaboration:</h3>
+                            <p>Perkuat kolaborasi tim dengan mudah melalui platform komunikasi terintegrasi kami. Nikmati pembaruan
+                                real-time, berbagi file, dan alur kerja yang terpadu, membangun lingkungan kerja yang padu yang
+                                memaksimalkan sinergi di antara anggota tim.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <img src="3.png" alt="Fitur 3">
+                        <div>
+                            <h3>Data Security for Peace of Mind:</h3>
+                            <p>Tindakan keamanan yang kokoh kami memastikan bahwa data Anda dilindungi setiap langkahnya. Tidur nyenyak
+                                mengetahui bahwa informasi sensitif Anda terlindungi dari akses yang tidak sah, memberi Anda ketenangan
+                                pikiran yang diperlukan untuk berkonsentrasi pada aktivitas bisnis inti Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="contact-us" class="contact-form">
+                <h3>Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 <br>Jam setelah data kami terima</p>
+                <br>
+
+                <form id="contactForm" onsubmit="validateForm(event)">
+                    <label for="fullName">Your Name:</label>
+                    <br>
+                    <input placeholder="First and last name" type="text" id="fullName" name="fullName" required>
+                    <br> <br> <br>
+
+                    <label for="emailAddress">Email Address:</label>
+                    <br>
+                    <input placeholder="example@email.com" type="email" id="emailAddress" name="emailAddress" required>
+                    <br> <br> <br>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <br>
+                    <input placeholder="Your phone number" type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <br> <br> <br>
+
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea placeholder="Type your message here" id="message" name="message" rows="4"
+                        required></textarea>
+                    <br> <br> <br>
+
+                    <label for="interest">What are you interested in:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="delivery">Delivery Services</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <br> <br> <br>
+
+                    <button>
+                        <div class="svg-wrapper-1">
+                          <div class="svg-wrapper">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <span>Send</span>
+                      </button>
+                      
+                </form>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section id="our-package" class="our-package">
+        <div class="package-title">
+            <h2>Our Package</h2>
+        </div>
+
+        <section class="our-package-details">
+            <div class="package-item">
+                <img src="light-bulb.png" alt="Fresh Vegetable">
+                <div>
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari <br> sumber pertanian terbaik</p>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="light-bulb.png" alt="Fresh Fruit">
+                <div>
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik <br> dari lokal atau impor dan <br> harga yang menarik</p>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="light-bulb.png" alt="Instant Delivery">
+                <div>
+                    <h3>Instant Delivery</h3>
+                    <p>Dikirim instan oleh kurir <br> yang telah di training <br>dengan SOP untuk menjaga <br>kondisi
+                        belanja kamu</p>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="star.png" alt="Kitchen Ingredient">
+                <div>
+                    <h3>Kitchen Ingredient</h3>
+                    <p>Bumbu dapur lengkap untuk <br> keperluan memasak kamu</p>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="star.png" alt="Kitchen Set">
+                <div>
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masak untuk <br> membantu kamu memasak</p>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="star.png" alt="Bundling Set">
+                <div>
+                    <h3>Bundling Set</h3>
+                    <p>Bingung masak apa? Sudah <br>tersedia paket untuk kamu <br> masak di dapur mu</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="call-action" class="closing-argument">
+        <div class="closing-title">
+            <h2>Unlock a World of Freshness and Convenience</h2>
+        </div>
+        <div class="closing-description">
+            <p>Experience the finest quality groceries delivered right to your doorstep. <br> Say goodbye to hassle and
+                hello to a new level of convenience in your daily life. Join us on a journey of freshness and
+                simplicity!</p>
+        </div>
+        <br> <br>
+        <button onclick="scrollToContactUs()">
+            <span class="button_top"> call to action
+            </span>
+          </button>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+                <p>© 2024 Mufti Fathur Rahman</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
